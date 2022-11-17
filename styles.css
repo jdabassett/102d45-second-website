@@ -42,6 +42,7 @@ nav a {
     margin: 2em auto 1em auto;
     width: 40vw;
     display:flex;
+    padding: 1em;
     flex-direction:column;
     justify-items:center;
 }
@@ -61,15 +62,18 @@ img {
 
 #p1 {
     border: 2px solid #000200;
-    width: 90vw;
+    text-align:center;
+    width: 90%;
     padding: 1em;
+    margin: 0 auto 1em auto;
     background-color: #fffeff;
 }
 
 div {
-    width:90vw;
+    width:90%;
     height:450px;
     border: 2px solid #000200;
+    margin: 0 auto 1em auto;
     padding: 1em;
     background-color: #fffeff;
     display:flex;
@@ -84,9 +88,13 @@ footer {
     position:relative;
     background-color:#fffeff;
     border-top: 2px solid #000200;
-    width: 100%;
-    padding: 0;
+    width: 90%;
+    padding: 1em;
     bottom:0;
+    margin: 0 auto 1em auto;
+}
+footer p {
+    text-align:center;
 }
 
 
