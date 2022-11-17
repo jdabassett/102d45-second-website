@@ -1,5 +1,6 @@
 body {
     background-image: url(/images/background.jpg);
+    background-size:100%;
 }
 
 header {
@@ -80,11 +81,12 @@ div {
 
 
 footer {
+    position:relative;
     background-color:#fffeff;
     border-top: 2px solid #000200;
-    width: 100vw;
-    padding: 10px auto 50px auto;
-    margin: 1em -1em 2em -1em;
+    width: 100%;
+    padding: 0;
+    bottom:0;
 }
 
 
