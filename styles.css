@@ -28,6 +28,7 @@ nav ul {
 nav li {
     border: 2px solid #000200;
     padding: 0.25rem;
+    border-radius:2px;
 }
 
 nav a {
