@@ -7,12 +7,25 @@
         <title>Page Title</title>
     </head>
     <body>
-        <!-- <script>
+        <script>
             alert('Are you ready, KIDS!!!???');
-            let userName = prompt('What is your name?');
-            console.log("The user's name is:", userName);
-            document.write("Hello welcome to my page, ",userName);
-        </script> -->
+
+            let userGum = prompt('Do you like gum? YES or NO?');
+
+            if(userGum == "YES"){
+                alert("Well, you have come to the right place!");
+                let userStatus = "GUM-LOVER AHOY";
+                console.log(userStatus);
+            } else if (userGum == "NO") {
+                alert("Not everyone's perfect. Come on in anyway!");
+                let userStatus = "GUM-HATER BEWARE!";
+                console.log(userStatus);
+            } else {
+                alert("I don't know what that means. Come on in anyway!");
+                let userStatus = "UNDECIDED";
+                console.log(userStatus);
+            }
+        </script>
         <header>
             <h1>How to make gum for that hipster in your life.  :)</h1>
             <nav>
