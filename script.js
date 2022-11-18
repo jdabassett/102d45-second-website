@@ -1,7 +1,9 @@
 alert('Are you ready, KIDS!!!???');
 
 const obj1 = {
-    "QUESTION":"Do you like gum? YES or NO?",
+    "QUESTION1":"Do you like gum? YES or NO?",
+    "QUESTION2":"Let's try this again. Do you like gum? YES or NO?",
+    "QUESTION3":".  Oh and how many stick of gum do you have in your pockets right now?",
     "YES":"Well, you have come to the right place!",
     "NO":"Not everyone's perfect. Come on in anyway.",
     "NA":"I don't know what that means. Come on in anyway",
@@ -12,25 +14,24 @@ const obj1 = {
     "UNDECIDED":"POTENTIAL GUM-LOVER!"};
 
 function doTheyLikeGum() {
-    let userAttempts = 0;
-    while (userAttempts<2){
-        let userGum = prompt(obj1.QUESTION);
-        if (userGum=="YES"){
-            alert(obj1.YES);
-            return obj1.LOVER;
-        } else if (userGum=="NO"){
-            alert(obj1.NO);
-            return obj1.HATER;
-        } else if (userAttempts==1){
-            alert(obj1.ANYWAY);
-            return obj1.UNDECIDED;
-        } else {
-            alert(obj1.RETRY);
-        }
-        userAttempts++;
+    let userGum = prompt(obj1.QUESTION1);
+    let userSticks;
+
+    while ((userGum != "YES") && (userGum != "NO") && (userGum != null)){
+        userGum = prompt(obj1.QUESTION2);
+    }
+
+    if (userGum=="YES"){
+        userSticks = prompt(obj1.LOVER + obj1.QUESTION3);
+    } else if (userGum=="NO"){
+        userSticks = prompt(obj1.HATER + obj1.QUESTION3);
+    }
+
+    for (let i = 0; i < userSticks; i++){
+        document.write("<img src='doublemint.png' alt='doublement' />");
     }
 }
 
 let userStatus = doTheyLikeGum();
 
-alert(userStatus)
+

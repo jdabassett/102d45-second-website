@@ -87,7 +87,7 @@ div {
 footer {
     position:relative;
     background-color:#fffeff;
-    border-top: 2px solid #000200;
+    border: 2px solid #000200;
     width: 90%;
     padding: 1em;
     bottom:0;
